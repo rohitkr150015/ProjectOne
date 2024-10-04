@@ -1,0 +1,37 @@
+.navbar{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 17px 170px;
+}
+.navbar-icon{
+  align-items: start;
+  width:35px;
+  height:33px;
+  margin-left:20px;
+}
+.nav-menu{
+  display:flex;
+ list-style: none;
+ gap: 40px;
+ font-size: 18px;
+
+}
+.navbar-icon-list{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+}
+.navbar-item-logo{
+    transition: transform 0.3s ease opacity 0.3s ease;
+    transform: scale(1.1);
+
+}
+.navbar-item.logo:hover{
+  opacity: 0.8;
+}
+.navbar-item.logo:hover{
+  filter: brightness(5);
+}
