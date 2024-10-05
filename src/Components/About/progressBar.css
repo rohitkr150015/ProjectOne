@@ -1,0 +1,187 @@
+.skill-subtitle{
+  
+  text-align:center;
+  font-size:40px;
+  padding-bottom:70px;
+
+
+
+}
+
+.skill-subtitle  h3{
+  display: flex;
+  justify-content:center;
+
+
+}
+
+.container{
+  width: 600px;
+
+  padding:75px 90px;;
+  margin-left: 120px;
+}
+
+.bar{
+font-size:25px;
+display: flex;
+align-items: center;
+margin-bottom: 20px; /
+}
+
+.bars{
+  margin: 40px 0;;
+}
+.bars .bar .info{
+ margin-right:15px;
+}
+
+.bars .bar .info span{
+  font: size 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+}
+.bars .bar .progress-line{
+  position:relative;
+
+  width:100%;
+  height: 5px;
+  background-color: rgb(189, 148, 86);
+  border-radius: 10px;
+  margin-left:10px;
+  margin-top:5px;
+
+
+  /* transform: scaleX(4);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1.0,0,5,1) forwards;
+  overflow:hidden; */
+
+} 
+
+
+.bars .bar .progress-line span{
+  display:block;
+  height:100%;
+  /* background-color: rgb(255, 255, 255); */
+  background: linear-gradient(270deg,#DF8908 50%,#B415FF 100%);
+  /* position:absolute; */
+  border-radius: 10px;
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.progress-line.html span{
+  width:90%
+}
+
+.progress-line.javascript span{
+  width:60%
+}
+.progress-line.react span{
+  width:70%
+}
+.progress-line.java span{
+  width:70%
+}
+.progress-line.spring-boot span{
+  width:75%
+}
+.progress-line.python span{
+  width:65%
+}
+.progress-line.aws span{
+  width:50%
+}
+
+@keyframes animate {
+  to{
+    transform:scaleX(1);
+  }
+  
+}
+
+.progress-line span::after {
+  content: attr(data-progress);
+  position: absolute;
+  right: -30px; /* Adjust this value based on your layout */
+  top: -20px; /* Adjust this value based on your layout */
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 2px 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s;
+  opacity: 1; /* Set this to 1 to always show */
+}
+
+.bar:hover .progress-line span::after {
+  opacity: 1;
+}
+
+
+/* .progress-line span::after{
+  position: absolute;
+  padding: 1px 8px;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  font-size: 12px;
+
+  border-radius: 3px;
+
+  top:-20px;
+  right:-20px;
+  animation:showTest 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+.progress-line.html span::after{
+  content:"50"
+}
+
+.progress-line.javascript span::after{
+  content:"60"
+}
+.progress-line.react span::after{
+  content:"80"
+}
+.progress-line.java span::after{
+  content:"70"
+}
+.progress-line.spring-boot span::after{
+  content:"85"
+}
+.progress-line.python span::after{
+  content:"65"
+}
+.progress-line.aws span::after{
+  content:"20"
+}
+.progress-line span::before{
+  content: "";
+  position:absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: rgb(135, 49, 248);
+  top: -10px;
+  right: 0;
+  animation: showText 0.5s 1.5s  linear forwards;
+  opacity: 0;
+
+
+} */
+
+
+.bar:hover{
+  transform: scale(1.12);
+  transition: 0.3s;
+}
+
+@keyframes showText {
+  to{
+    opacity: 1;
+  }
+  
+} 

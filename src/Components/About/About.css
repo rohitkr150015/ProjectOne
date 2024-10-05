@@ -1,0 +1,47 @@
+.about{
+  height: 100vh;
+  padding: 20px;
+}
+
+.about-tag {
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 40px;
+
+ 
+}
+
+.about-sections {
+  display: flex; 
+  justify-content: space-between; 
+  position:relative;
+padding: 5px;
+margin-top: 50px;
+
+}
+
+.about-left {
+  flex: 1;
+  margin-right: 20px; 
+}
+
+.about-right {
+  flex: 0 0 300px;
+
+}
+.about-para{
+
+}
+.about-sections::before {
+  content: '';
+  position: absolute;
+  left: calc(50% - 1px); /* Position the line at the center */
+  top: 0;
+  bottom: 0;
+  width: 3px; 
+  background-color: #919ebb3b; 
+}
+
+.about-para p{
+  font-size: 20px ;
+}
