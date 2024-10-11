@@ -70,6 +70,7 @@ margin-bottom: 20px; /
   animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
   transform: scaleX(0);
   transform-origin: left;
+  color: black;
 }
 .progress-line.html span{
   width:90%
